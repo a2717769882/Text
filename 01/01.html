@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的简历</title>
+	<link rel="stylesheet" href="01.css">
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script src="01.js"></script>
+   <script>
+       $(document).ready(function(){
+        $('#right').find('li').hover(function(){
+          $(this).css('list-style','url(images/an2.png)');
+          $(this).find('b').css('display','block');
+        },function(){
+          $(this).css('list-style','url(images/an.png)');
+          $(this).find('b').css('display','none');
+        });
+       })
+    </script>
+</head>
+<body>
+    <header>
+       <div id="logo">
+          <img src="images/logo.png" alt="logo">
+       </div>
+       <nav>
+          <ul>
+             <li><a href="#item1">个人简介</a></li>
+             <li><a href="#item2">专业技能</a></li>
+             <li><a href="#item3">个人作品</a></li>
+             <li><a href="#item4">联系方式</a></li>
+          </ul>
+       </nav>
+    </header>
+    <div id="main">
+       <div id="right">
+          <ul>
+             <li><a href="#item1" class="current"><b>个人简历</b></a></li>
+             <li><a href="#item2"><b>专业技能</b></a></li>
+             <li><a href="#item3"><b>个人作品</b></a></li>
+             <li><a href="#item4"><b>联系方式</b></a></li>
+          </ul>
+       </div>
+       <div id="left">
+          <section id="item1" class="item">
+             <img src="images/w1.jpg" alt="你好">
+             <h1>我的简历</h1>
+             <article>
+             <p>姓名丨田一凡</p>
+             <p>年龄丨22岁</p>
+             <p>岗位丨正在寻找前端工程师岗位</p>
+             </article>
+             <article class="article1">
+               <p>我是一个做事认真的人，热衷于新技术的学习。</p>
+               <p>我有时间概念，能在约定时间内保证完成任务。</p>
+               <p>可以根据公司需要而快速进入新技术的开发。</p>
+               <p >积极向上有良好的学习能力，热衷于IT前端开发行业。</p>
+             </article>
+          </section> <!-- item1结束 -->
+          <section id="item2" class="item">
+             <h1>个人技能</h1>
+             <article>
+                <dl>
+                   <dt><h2>HTML/CSS</h2></dt>
+                   <dd>能够编写语义化的<strong>HTML</strong>,模块化的<strong>CSS</strong>,实现较复杂的布局与动画</dd>
+                   <dt><h2>JavaScript</h2></dt>
+                   <dd>可以较为熟练编写<strong>JavaScript</strong>代码</dd>
+                   <dt><h2>框架</h2></dt>
+                   <dd>熟练应用<strong>JQuery框架,Bootstrap框架</strong></dd>
+                </dl>
+              <div class="box">
+              <div class="link mission-link">
+              <span class="icon animated"></span>
+              <a class="button">
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+              HTML
+              </a>
+              </div>
+              <div class="link play-link">
+              <span class="icon animated"></span>
+              <a class="button">
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+              CSS
+              </a>
+              </div>
+              <div class="link touch-link">
+              <span class="icon animated"></span>
+              <a class="button">
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+              JavaScript
+              </a>
+              </div>
+          </article>
+          </section><!-- item2结束 -->
+          <section id="item3" class="item">
+            <h1>我的作品</h1>
+            <article>
+              <span id="li1">
+                <a href="zp1.html" target="_blank">
+                <img src="images/demo_box1.jpg" alt="作品1" >
+                <img src="images/1.png" alt="作品1" class="at1">
+              </a>
+              </span>
+              <span id="li2">
+                <a href="muke.html" target="_blank">
+                <img src="images/demo_box2.jpg" alt="作品2">
+                <img src="images/2.png" alt="作品2" class="at2">
+              </a>
+              </span>
+              <a href=""><img src="" alt=""></a>
+            </article>
+          </section><!-- item3结束 -->
+          <section id="item4" class="item">
+            <h1>联系方式</h1>
+            <div class="no1">
+              <span class="xz blog"></span>
+              <p id="rzz">Phone:18210157936</p>
+            </div>
+            <div class="no1">
+            <a href="mailto:1162806202@qq.com" class="xz email"></a>
+            <a href="mailto:1162806202@qq.com" class="rz">Email:1162806202@qq.com</a>
+            </div>
+            <div class="no1">
+            <a href="https://github.com/a2717769882" class="xz github" target="_blank"></a>
+            <a href="https://github.com/a2717769882" class="rz" target="_blank">GitHub:a2717769882</a>
+            </div>
+            <p>            希望借此机会为贵司献上我的一点绵薄之力，快招我到碗里来吧！</p>
+        </section><!-- item4结束 -->
+       </div>
+    </div>
+</body>
+</html>
